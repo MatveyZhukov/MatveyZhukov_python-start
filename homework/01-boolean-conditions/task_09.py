@@ -41,3 +41,15 @@
 #     True
 
 # Решение
+
+
+priceOne = int(input("Цена первого товара, руб.: "))
+priceTwo = int(input("Цена второго товара, руб.: "))
+
+if (priceOne > 1000 and priceTwo <= 1000) or (priceOne <= 1000 and priceTwo > 1000):
+    print(True)
+else:
+    print(False)
+
+
+    

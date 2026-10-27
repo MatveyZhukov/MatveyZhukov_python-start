@@ -49,3 +49,21 @@
 #     False
 
 # Решение
+
+box_officeOne = input("Касса 1 открыта (да/нет): ")
+box_officeTwo = input("Касса 2 открыта (да/нет): ")
+box_officeThree = input("Касса 3 открыта (да/нет): ")
+
+account_box_office = 0    #счёт касс
+
+if box_officeOne == "да":
+    account_box_office += 1
+if box_officeTwo == "да":
+    account_box_office += 1
+if box_officeThree == "да":
+    account_box_office += 1
+
+
+print(account_box_office == 1)
+
+

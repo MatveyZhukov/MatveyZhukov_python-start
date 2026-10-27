@@ -39,3 +39,12 @@
 #     False
 
 # Решение
+
+stock = int(input("Остаток на складе: "))
+price = int(input("Цену товара, руб.: "))
+money = int(input("Деньги у покупателя, руб.: "))
+
+buy = stock > 0 and money >= price
+
+print(buy)
+

@@ -31,3 +31,24 @@
 #     Сессия закрыта: False
 
 # Решение
+
+examOne = int(input("Балл за первый экзамен: "))
+examTwo = int(input("Балл за второй экзамен: "))
+examThree = int(input("Балл за третий экзамен: "))
+
+passed_exams = 0
+if examOne >= 40:
+    passed_exams += 1
+
+if examTwo >= 40:
+    passed_exams += 1
+    
+if examThree >= 40:
+    passed_exams += 1
+
+session_closed = passed_exams == 3
+
+print(f"Сдано экзаменов: {passed_exams}")
+print(f"Сессия закрыта: {session_closed}")
+
+

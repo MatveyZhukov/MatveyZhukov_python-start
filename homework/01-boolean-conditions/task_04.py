@@ -44,3 +44,23 @@
 #     Позвонить покупателю: False
 
 # Решение
+
+order_paid = input("Заказ оплачен (да/нет): ")
+is_there_product = input("Товар есть (да/нет): ")
+address = input("Адрес указан (да/нет): ")
+
+if order_paid == "да" and Is_there_product == "да" and address == "да":
+    can_ship = True
+else:
+    can_ship = False
+
+
+if order_paid == "да" and address == "нет":
+    need_call = True
+else:
+    need_call = False
+
+
+print(f"Можно отправлять: {can_ship}")
+print(f"Позвонить покупателю: {need_call}")
+

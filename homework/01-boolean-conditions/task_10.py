@@ -49,3 +49,22 @@
 #     Допущен: False
 
 # Решение
+
+attendance = int(input("Посещаемость, %: "))
+submitted_laboratory = int(input("Сдано лабораторных: "))
+debt = int(input("Долг по оплате, руб.: "))
+
+check_attendance = attendance >= 75
+check_labs = submitted_laboratory >= 8
+
+check_debt = debt == 0
+
+is_allowed = check_attendance and check_labs and check_debt
+
+
+print(f"Посещаемость: {check_attendance}")
+print(f"Лабораторные: {check_labs}")
+print(f"Нет долга: {check_debt}")
+print(f"Допущен: {is_allowed}")
+
+

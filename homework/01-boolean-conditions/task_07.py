@@ -28,3 +28,14 @@
 #     False
 
 # Решение
+
+bottles = int(input("Количество бутылок: "))
+
+if bottles % 6 == 0 and bottles % 4 == 0:
+    print(True)
+else:
+    print(False)
+
+
+
+    

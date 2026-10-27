@@ -50,3 +50,16 @@
 #     Можно на аттракцион: False
 
 # Решение
+
+height = int(input("Рост, см.: "))
+age = int(input("Возраст: "))
+with_adults = (input("Со взрослыми (да / нет)?: "))
+
+if height >= 120 and (age >= 10 or with_adults == "да"):
+    go_to_the_attraction = True
+else: 
+    go_to_the_attraction = False
+print(f"Можно на аттракцион: {go_to_the_attraction}")
+
+
+
