@@ -47,3 +47,21 @@
 #     Отпуск согласован
 
 # Решение
+
+days_worked = int(input("Отработано месяцев: "))
+vacation_days = int(input("Дней отпуска: "))
+
+if days_worked < 6:
+    print("Отпуск пока недоступен")
+else:
+    available_days = (days_worked * 28) // 12 
+    print(f"Доступно дней: {available_days}")
+    
+
+    if vacation_days <= available_days:
+        print("Отпуск согласован")
+    else:
+        shortage = vacation_days - available_days
+        print(f"Не хватает дней: {shortage}")
+
+

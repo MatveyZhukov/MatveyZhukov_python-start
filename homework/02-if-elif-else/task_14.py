@@ -60,3 +60,30 @@
 #     Ошибка ввода
 
 # Решение
+
+submitted_on_time = input("Сдана в срок (да/нет): ")
+points = int(input("Баллы: "))
+
+if points < 0 or points > 10:
+    print("Ошибка ввода")
+else:
+    if submitted_on_time == "да":
+        if 9 <= points <= 10:
+            print("Оценка: 5")
+
+        elif 7 <= points <= 8:
+            print("Оценка: 4")
+            
+        elif 5 <= points <= 6:
+            print("Оценка: 3")
+
+        else:
+            print("Работа не зачтена")
+
+    else:
+        if points >= 5:
+            print("Оценка: 3")
+        else:
+            print("Работа не зачтена")
+
+

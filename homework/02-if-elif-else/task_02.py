@@ -58,3 +58,29 @@
 #     Нужно сдать в багаж
 
 # Решение
+
+length = int(input("Введите длину,см: "))
+width = int(input("Введите ширину,см: "))
+height = int(input("Введите высоту,см: "))
+weight = float(input("Введите вес,кг: "))
+
+check = 0
+
+if length <= 55:
+    check +=1
+
+if width <= 40:
+    check +=1
+
+if height <= 20:
+    check +=1
+
+if weight <= 10:
+    check +=1
+
+
+if check == 4:
+    print("Можно взять с собой")
+else:
+    print("Нужно сдать в багаж")
+

@@ -43,3 +43,22 @@
 #     Кешбэк: 0.00 руб.
 
 # Решение
+
+category = input("Категория: ")
+
+amount_purchase = float(input("Сумма покупки, руб.: "))
+
+if category == "азс":
+    cashback = amount_purchase * 0.05
+    
+elif category == "аптека":
+    cashback = amount_purchase * 0.03
+
+elif category == "супермаркет":
+    cashback = amount_purchase * 0.01
+
+else:
+    cashback = 0.0
+
+print(f"Кешбэк: {cashback:.2f} руб.")
+
