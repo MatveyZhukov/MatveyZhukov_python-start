@@ -27,3 +27,14 @@
 #     Сумма цифр: 3
 
 # Решение
+
+number = int(input("Номер заказа: "))
+total = 0
+
+while number > 0:
+    digit = number % 10  
+    total += digit       
+    number = number // 10  
+
+
+print(f"Сумма цифр: {total}")

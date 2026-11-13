@@ -33,3 +33,16 @@
 #     10! = 3628800
 
 # Решение
+
+n = int(input("Число n: "))
+factorial = 1
+
+if n == 0:
+    result = 1
+else:
+    for i in range(1, n + 1):
+        factorial *= i
+    result = factorial
+
+print(f"{n}! = {result}")
+

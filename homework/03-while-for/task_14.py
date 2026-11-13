@@ -47,3 +47,24 @@
 #     Среднее: 7.00
 
 # Решение
+
+n = int(input("Число показаний: "))
+total = 0
+
+first_temp = int(input("Показание, °C: "))
+min_temp = first_temp
+total += first_temp
+
+
+for i in range(n - 1):
+    temp = int(input("Показание, °C: "))
+    total += temp
+    
+    if temp < min_temp:
+        min_temp = temp
+
+average = total / n
+
+print(f"Минимум: {min_temp}")
+print(f"Среднее: {average:.2f}")
+

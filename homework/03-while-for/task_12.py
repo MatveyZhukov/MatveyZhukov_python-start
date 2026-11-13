@@ -28,3 +28,14 @@
 #     Слов: 0
 
 # Решение
+
+phrase = input("Фраза: ")
+
+if phrase == "":
+    word_count = 0
+else:
+    space_count = phrase.count(" ")
+    word_count = space_count + 1
+
+print(f"Слов: {word_count}")
+
